@@ -1,29 +1,11 @@
 import React, { useState, useEffect } from 'react';
-import './style.css'; // Import CSS file for styles
-import lock from './lock.png';
-import hide from './hide.png'
-import person from './person.png'
-import view from './view.png'
+import './style.css';
+import lock from '../assets/login-images/lock.png';
+import person from '../assets/login-images/person.png'
 
 
 const Login = () => {
-  const [passwordVisible, setPasswordVisible] = useState(false);
-
-  useEffect(() => {
-    const togglePassword = document.getElementById('togglePassword');
-    const passwordInput = document.getElementById('passwordInput');
-    
-    if (togglePassword && passwordInput) {
-      togglePassword.addEventListener('click', function() {
-        const type = passwordVisible ? 'password' : 'text';
-        passwordInput.setAttribute('type', type);
-        setPasswordVisible(!passwordVisible);
-        // Change eye icon based on password visibility
-        this.textContent = passwordVisible ? '👁️' : '👁️';
-      });
-    }
-  }, [passwordVisible]); // Run effect whenever passwordVisible changes
-
+ 
   return (
     <div className="container">
       <section>
