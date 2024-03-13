@@ -1,0 +1,155 @@
+/* table {
+    font-family: arial, sans-serif;
+    border-collapse: collapse;
+    width: 100%;
+   
+  }
+  .table-container{
+    border-radius: 20px;
+    overflow: hidden;
+  }
+  
+  td, th ,tr {
+    border: 1px solid #000000;
+    text-align: left;
+    padding: 8px;
+  }
+  
+  tr:nth-child(odd) {
+    background-color: #dddddd;
+  }
+
+  #head{
+    background-color: #21bbf2;
+    color: white;
+  }
+ 
+  .edit{
+    border:2px solid  rgb(127, 127, 255);
+    width: 80px;
+    height: 30px;
+    margin-right: 10px;
+  }
+  .remove{
+    border:2px solid yellow;
+    width: 80px;
+    height: 30px;
+   
+  }
+  .image{
+    border-radius: 50%;
+    height: 50px;
+    width: 50px;
+    left: 0;
+    margin: auto;
+  }
+
+td,th {
+  
+    text-align: center;
+} */
+
+body {
+  padding: 30px;
+  font-family: Arial, Helvetica, sans-serif;
+  background: rgb(66,71,115);
+  background: linear-gradient(90deg, rgba(66,71,115,1) 41%, rgba(116,50,73,1) 65%);
+}
+.container {
+  width: 95%;
+  max-width: 1000px;
+  margin: auto;
+  background: url('background.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  color: white;
+  border-radius: 10px; 
+  overflow: hidden; 
+  box-shadow: 5px 5px 5px black;
+}
+
+.form-container {
+  margin: auto;
+  margin-top: 10%;
+  margin-bottom: 10%;
+  padding: 30px;
+  width: 30%;
+  height: 55%;
+  border: 2px solid white;
+  border-radius: 12px; 
+  backdrop-filter: blur(10px); 
+  z-index: -1; 
+}
+
+.input-group {
+  display: flex; 
+  align-items: baseline; 
+  margin-bottom: 20px;
+}
+
+.icon {
+  width: 20px; 
+  height: auto;
+  color: white;
+}
+
+.toggle-password {
+  position: absolute;
+  top: 45%;
+  right: 10px;
+  transform: translateY(-50%);
+  cursor: pointer;
+}
+.input-box {
+  width: 100%;
+  padding: 10px;
+  border: none;
+  outline: none;
+  border-bottom: 2px solid white;
+  background-color: transparent;
+  color: white;
+}
+
+.input-box::placeholder {
+  color: white;
+  opacity: 0.7; 
+}
+
+
+.login {
+  width: 100%;
+  padding: 10px;
+  background-color: white;
+  border: none;
+  border-radius: 7px;
+  color: #333;
+  cursor: pointer; 
+  transition: background-color 0.3s, color 0.3s; 
+}
+
+h1{
+  text-align: center;
+}
+.login:hover {
+  background-color: #eaeaea;
+  color: #333; 
+}
+#fp{
+  position: relative;
+ left: 30px;
+  
+  color: white;
+  text-decoration: none;
+}
+.footer {
+  text-align: center;
+}
+
+.footer a {
+  color: white;
+  text-decoration: underline;
+}
+
+.footer a:hover {
+  color: #ccc; 
+}
